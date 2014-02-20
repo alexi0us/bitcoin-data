@@ -1,0 +1,20 @@
+extends layout
+block content
+    div.container
+        div.content
+            table(class="table table-condensed table-responsive ", id="orderbook",style="padding-bottom: 115px;")
+                thead
+                    tr
+                        th #
+                        th Value
+                        th Currency
+                tbody
+                    tr
+                        td Buy
+                        td #{objects.data.buy.value}
+                        td #{objects.data.buy.currency}
+                    tr
+                        td Sell
+                        td #{objects.data.sell.value}
+                        td #{objects.data.sell.currency}
+          div.footer
